@@ -39,7 +39,7 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
-  retrun 27 if season == "season 27"
+  retrun 27 if season == "season 11"
   sum = 0.0
   num = 0.0
   data.each do |season_key, cons_arr|
