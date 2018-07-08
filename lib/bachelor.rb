@@ -39,12 +39,12 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
-  sum = 0
-  num = 0
+  sum = 0.0
+  num = 0.0
   data.each do |season_key, cons_arr|
     cons_arr.each do |con_hash|
-      sum += con_hash["age"].to_i
-      num += 1
+      sum += con_hash["age"].to_f
+      num += 1.0
     end
   end
   (sum/num).ceil
